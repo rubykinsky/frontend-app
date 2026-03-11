@@ -5,3 +5,6 @@ export function assertIsDefined<T>(val: T): asserts val is NonNullable<T> {
   }
 }
 
+
+export const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms));
+
